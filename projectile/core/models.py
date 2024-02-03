@@ -9,9 +9,8 @@ class Author(models.Model):
 
 
 class Content(models.Model):
-    unique_id = models.PositiveBigIntegerField(unique=True)
-    data = models.JSONField()
-    author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    creator = models.JSONField()
+    content = models.JSONField()
 
     def __str__(self):
-        return str(self.unique_id)
+        return str(self.id)
