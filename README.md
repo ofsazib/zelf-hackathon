@@ -31,7 +31,7 @@ The goal is to create a simple Django backend where users can manage restaurants
     ZELF_HACK_API_BASE_URL=https://hackapi.hellozelf.com
     ```
 
-4. Apply migrations:
+6. Apply migrations:
 
     ```bash
     python manage.py makemigrations && python manage.py migrate
@@ -48,6 +48,7 @@ python projectile/manage.py createsuperuser
 ## API
 
 ### Content List APi with author details
+The API currently have no authentication
 
 ```
 http://localhost:8000/api/v1/core/contents/?page=1
